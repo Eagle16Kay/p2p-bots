@@ -1,0 +1,13 @@
+[Unit]
+Description=Binance P2P Merchant Bot
+After=network.target
+
+[Service]
+Type=simple
+User=botuser
+ExecStart=/home/botuser/run_binance_bot.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+# Allowlist: everything is ignored unless named below.
+*
+
+!.gitignore
+!README.md
+!bot_binance.py
+!run_binance_bot.sh
+!systemd/
+!systemd/binance-p2p-bot.service
+
+# Never add credentials or runtime state: *_env.sh, *.bak*, seen_orders*.json
